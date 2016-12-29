@@ -12,10 +12,8 @@ import com.symbol.emdk.barcode.ScannerInfo;
 import com.symbol.emdk.barcode.ScannerResults;
 import com.symbol.emdk.barcode.StatusData;
 
-import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.PluginResult;
 
 import java.io.Serializable;
@@ -46,12 +44,6 @@ public class EnterpriseBarcode extends CordovaPlugin implements Serializable, EM
 	//------------------------------------------------------------------------------------------------------------------
 	// CORDOVA
 	//------------------------------------------------------------------------------------------------------------------
-
-// todo-dave: remove?
-public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-	Log.i(LOG_TAG, "Cordova initialize");
-	super.initialize(cordova, webView);
-}
 
 	public void onDestroy() {
 		Log.i(LOG_TAG, "Cordova onDestroy");
@@ -174,9 +166,9 @@ public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		}
 	}
 
-// todo-dave: remove?
-@Override
-public void onClosed() { Log.i(LOG_TAG, "EMDKManager onClosed"); }
+	// necessary to be compliant with the EMDKListener interface
+	@Override
+	public void onClosed() {}
 
 
 

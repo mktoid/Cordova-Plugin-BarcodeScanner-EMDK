@@ -28,6 +28,16 @@ __When updating from a previous Cordova version it is necessary to re-add this p
 
 - Android
 
+## emdkBarcode.available
+
+Boolean which is `true` when the EMDK scanner is available on the device.
+
+### Example
+
+    if (emdkBarcode.available) {
+        console.log("EMDK is available");
+    );
+
 ## emdkBarcode.startHardRead
 
 Enables the barcode scanner hardware and the associated trigger, __so pressing the hardware trigger will initiate a scan__.

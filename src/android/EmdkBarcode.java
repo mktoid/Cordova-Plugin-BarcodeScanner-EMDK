@@ -1,4 +1,4 @@
-package com.symbol.enterprisebarcode;
+package ch.codeworx.cordova.plugin.barcodescanner.emdk;
 
 import android.util.Log;
 
@@ -28,16 +28,16 @@ import java.util.List;
 
 
 
-public class EnterpriseBarcode extends CordovaPlugin implements Serializable, EMDKManager.EMDKListener, Scanner.StatusListener, Scanner.DataListener {
+public class EmdkBarcode extends CordovaPlugin implements Serializable, EMDKManager.EMDKListener, Scanner.StatusListener, Scanner.DataListener {
 
-	private static final String LOG_TAG = "EnterpriseBarcode";
+	private static final String LOG_TAG = "EmdkBarcode";
 
 	private EMDKManager emdkManager = null;             ///<  If the EMDK is available for scanning, this property will be non-null
 	private Scanner scanner = null;                         ///<  The scanner currently in use
 	private CallbackContext initialisationCallbackContext = null;   ///<  The Cordova callback for our first plugin initialisation
 	private CallbackContext scanCallbackContext = null;     ///<  The Cordova callback context for each scan
 
-	public EnterpriseBarcode() {}
+	public EmdkBarcode() {}
 
 
 
@@ -61,7 +61,7 @@ public class EnterpriseBarcode extends CordovaPlugin implements Serializable, EM
 			if (scanner != null && scanner.isEnabled()) {
 				callbackContext.success();
 			} else {
-				final EnterpriseBarcode me = this;
+				final EmdkBarcode me = this;
 				cordova.getThreadPool().execute(new Runnable() {
 					public void run() {
 						initialisationCallbackContext = callbackContext;

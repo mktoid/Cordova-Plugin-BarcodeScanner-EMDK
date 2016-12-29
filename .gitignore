@@ -1,1 +1,5 @@
 .idea/
+cordova lib download.URL
+android.iml
+src/android/org/
+src/android/.idea/

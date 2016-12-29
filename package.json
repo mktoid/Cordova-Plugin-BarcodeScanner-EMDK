@@ -1,21 +1,21 @@
 {
-  "name": "com-darryncampbell-enterprisebarcode",
-  "version": "0.0.4",
-  "description": "Proof of Concept Cordova Wrapper for Symbol Mobile Devices which use EMDK",
-  "main": "enterprisebarcode.js",
+  "name": "ch-codeworx-cordova-plugin-barcodescanner-emdk",
+  "version": "0.0.1",
+  "description": "Barcode scanner for mobile devices which use EMDK",
+  "main": "EmdkBarcode.js",
   "cordova": {
-    "id": "com-darryncampbell-enterprisebarcode",
+    "id": "ch-codeworx-cordova-plugin-barcodescanner-emdk",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darryncampbell/EnterpriseBarcodePoC.git"
+    "url": "https://github.com/DavidTalamona/Cordova-Plugin-BarcodeScanner-EMDK.git"
   },
   "keywords": [
     "cordova"
   ],
-  "author": "Darryn Campbell",
+  "author": "David Talamona",
   "license": "MIT"
 }

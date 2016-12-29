@@ -18,17 +18,14 @@ function EmdkBarcode () {
 	var me = this;
 
 	channel.onCordovaReady.subscribe(function () {
-		exec(function (scannersObj) {
+		exec(function () {
 			me.available = true;
-			me.scanners = scannersObj.scanners;
 			channel.onEmdkBarcodeReady.fire();
 		}, function () {
 			me.available = false;
 		}, "EmdkBarcode", "init", []);
 	});
 }
-
-EmdkBarcode.prototype.scanners = [];
 
 EmdkBarcode.prototype.startHardRead = function (successCallback, errorCallback) {
 	argscheck.checkArgs('fF', 'EmdkBarcode.startHardRead', arguments);

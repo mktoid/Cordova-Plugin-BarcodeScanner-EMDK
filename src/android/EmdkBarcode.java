@@ -86,14 +86,14 @@ public class EmdkBarcode extends CordovaPlugin implements Serializable, EMDKMana
 		}
 
 		else if (action.equalsIgnoreCase("startSoftRead")) {
-			Log.d(LOG_TAG, "Start soft read once");
+			Log.d(LOG_TAG, "Start soft read");
 			cordova.getThreadPool().execute(new Runnable() {
 				public void run() { StartReading("soft", callbackContext); }
 			});
 		}
 
 		else if (action.equalsIgnoreCase("startHardRead")) {
-			Log.d(LOG_TAG, "Start soft read once");
+			Log.d(LOG_TAG, "Start hard read");
 			cordova.getThreadPool().execute(new Runnable() {
 				public void run() { StartReading("hard", callbackContext); }
 			});

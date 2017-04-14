@@ -45,6 +45,7 @@ public class EmdkBarcode extends CordovaPlugin implements Serializable, EMDKMana
 	// CORDOVA
 	//------------------------------------------------------------------------------------------------------------------
 
+	@Override
 	public void onDestroy() {
 		Log.i(LOG_TAG, "Cordova onDestroy");
 
@@ -54,6 +55,7 @@ public class EmdkBarcode extends CordovaPlugin implements Serializable, EMDKMana
 		}
 	}
 
+	@Override
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
 		Log.d(LOG_TAG, "JS-Action: " + action);
 

@@ -1,30 +1,16 @@
-var argscheck = require('cordova/argscheck'),
-	channel = require('cordova/channel'),
-	utils = require('cordova/utils'),
-	exec = require('cordova/exec'),
-	cordova = require('cordova');
+var exec = require('cordova/exec'),
+	argscheck = require('cordova/argscheck');
 
-channel.createSticky('onEmdkBarcodeReady');
-// Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onEmdkBarcodeReady');
-
-/**
- * This represents the mobile device, and provides properties for inspecting the model, version, UUID of the
- * phone, etc.
- * @constructor
- */
 function EmdkBarcode () {
-	this.available = false;
 	var me = this;
 
-	channel.onCordovaReady.subscribe(function () {
-		exec(function () {
-			me.available = true;
-			channel.onEmdkBarcodeReady.fire();
-		}, function () {
-			me.available = false;
-		}, "EmdkBarcode", "init", []);
-	});
+	this.available = false;
+
+	exec(function () {
+		me.available = true;
+	}, function () {
+		me.available = false;
+	}, "EmdkBarcode", "init", []);
 }
 
 EmdkBarcode.prototype.startHardRead = function (successCallback, errorCallback) {

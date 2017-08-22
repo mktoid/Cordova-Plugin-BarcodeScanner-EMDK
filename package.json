@@ -1,21 +1,20 @@
 {
-  "name": "ch-codeworx-cordova-plugin-barcodescanner-emdk",
-  "version": "0.1.0",
-  "description": "Barcode scanner for mobile devices which use EMDK",
-  "main": "EmdkBarcode.js",
+  "name": "com-symbol-enterprisebarcode",
+  "version": "0.0.1",
+  "description": "Symbol Enterprise Barcode",
   "cordova": {
-    "id": "ch-codeworx-cordova-plugin-barcodescanner-emdk",
+    "id": "com-symbol-enterprisebarcode",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DavidTalamona/Cordova-Plugin-BarcodeScanner-EMDK.git"
+    "url": "https://github.com/darryncampbell/EnterpriseBarcodePoC.git"
   },
   "keywords": [
     "cordova"
   ],
-  "author": "David Talamona",
+  "author": "Darryn Campbell",
   "license": "MIT"
 }

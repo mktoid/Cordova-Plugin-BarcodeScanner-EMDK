@@ -30,7 +30,13 @@ __When updating from a previous Cordova version it is necessary to re-add this p
 
 ## emdkBarcode.available
 
+<<<<<<< HEAD
 Boolean which is `true` when the EMDK scanner is available on the device.
+=======
+### Android Quirks
+
+Currently Barcode functionality is only available if the application is built against the Zebra EMDK target, specify this in your project.properties file prior to building
+>>>>>>> parent of 452ae38... Updating readme
 
 ### Example
 

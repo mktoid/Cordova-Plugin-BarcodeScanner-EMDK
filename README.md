@@ -2,6 +2,18 @@
 *This plugin is provided without guarantee or warranty*
 =========================================================
 
+Forked to downgrade target Android version to
+Android 4.1.1 (JellyBean) @ MC32N0 (MC3200)
+
+Uses EMDK v. 04.02 http://techdocs.zebra.com/emdk-for-android/4-2/
+
+Requires installing EmdkOSUpdateApp_v4.2.3.apk to target device,
+may be obtained from https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html,
+version 4.2
+EMDK-A-040203-MAC.zip (Device Update folder)
+
+=========================================================
+
 # EnterpriseBarcode
 This plugin defines an `enterpriseBarcode` object which provides an API for interacting with the hardware scanner on Zebra devices.  The enterpriseBarcode object is not available until after the `deviceready` event.
 
@@ -12,7 +24,7 @@ This plugin defines an `enterpriseBarcode` object which provides an API for inte
     
 ## Installation
 
-    cordova plugin add https://github.com/darryncampbell/EnterpriseBarcodePoC.git
+    cordova plugin add https://github.com/mktoid/Cordova-Plugin-BarcodeScanner-EMDK.git
 __Requires Cordova 5.0 or higher otherwise your application will get build errors.  When updating from a previous Cordova version it is necessary to re-add this plugin__
     
 ## Supported Platforms

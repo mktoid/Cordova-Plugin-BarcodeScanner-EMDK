@@ -8,8 +8,7 @@ Uses EMDK v. 04.02 http://techdocs.zebra.com/emdk-for-android/4-2/
 
 Requires installing EmdkOSUpdateApp_v4.2.3.apk to target device,
 may be obtained from https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html,
-version 4.2
-EMDK-A-040203-MAC.zip (Device Update folder)
+version 4.2, EMDK-A-040203-MAC.zip, Device Update folder
 
 =========================================================
 

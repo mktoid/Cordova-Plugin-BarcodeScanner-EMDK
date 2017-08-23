@@ -2,8 +2,7 @@
 *This plugin is provided without guarantee or warranty*
 =========================================================
 
-Forked to downgrade target Android version to
-Android 4.1.1 (JellyBean) @ MC32N0 (MC3200)
+Forked to downgrade target Android version to 4.1.1 (JellyBean) @ MC32N0 (MC3200)
 
 Uses EMDK v. 04.02 http://techdocs.zebra.com/emdk-for-android/4-2/
 
